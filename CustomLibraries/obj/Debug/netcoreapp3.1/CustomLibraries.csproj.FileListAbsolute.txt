@@ -1,0 +1,16 @@
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\bin\Debug\netcoreapp3.1\CustomLibraries.exe
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\bin\Debug\netcoreapp3.1\CustomLibraries.deps.json
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\bin\Debug\netcoreapp3.1\CustomLibraries.runtimeconfig.json
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\bin\Debug\netcoreapp3.1\CustomLibraries.runtimeconfig.dev.json
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\bin\Debug\netcoreapp3.1\CustomLibraries.dll
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\bin\Debug\netcoreapp3.1\CustomLibraries.pdb
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\obj\Debug\netcoreapp3.1\CustomLibraries.csproj.AssemblyReference.cache
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\obj\Debug\netcoreapp3.1\CustomLibraries.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\obj\Debug\netcoreapp3.1\CustomLibraries.AssemblyInfoInputs.cache
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\obj\Debug\netcoreapp3.1\CustomLibraries.AssemblyInfo.cs
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\obj\Debug\netcoreapp3.1\CustomLibraries.csproj.CoreCompileInputs.cache
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\obj\Debug\netcoreapp3.1\CustomLibraries.dll
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\obj\Debug\netcoreapp3.1\CustomLibraries.pdb
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\obj\Debug\netcoreapp3.1\CustomLibraries.genruntimeconfig.cache
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\bin\Debug\netcoreapp3.1\CustomLibrary.dll
+C:\Users\useym\Desktop\tasks\CustomLibraries\CustomLibraries\bin\Debug\netcoreapp3.1\CustomLibrary.pdb
