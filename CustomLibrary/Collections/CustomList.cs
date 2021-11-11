@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace CustomLibrary.Collections
 {
-    public class CustomList<T>
+    public class CustomList<T> : IEnumerable<T>
     {
         /// <summary>
         /// The array that will hold the values of the list
@@ -218,6 +219,59 @@ namespace CustomLibrary.Collections
         }
 
         /// <summary>
+        /// Searches for an element that matches the conditions defined by the specified
+        //  predicate, and returns the first occurrence within the entire CustomLibrary.Collections.CustomList`1.
+        /// </summary>
+        /// <param name="match"></param>
+        /// <returns></returns>
+        public T Find(Predicate<T> match)
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                if (match(Storage[i]))
+                {
+                    return Storage[i];
+                }
+            }
+
+            return default(T);
+        }
+
+        /// <summary>
+        /// Retrieves all the elements that match the conditions defined by the specified predicate.
+        /// </summary>
+        /// <param name="match"></param>
+        /// <returns></returns>
+        public CustomList<T> FindAll(Predicate<T> match)
+        {
+            CustomList<T> items = new CustomList<T>();
+            for (int i = 0; i < Count; i++)
+            {
+                if (match(Storage[i]))
+                {
+                    items.Add(Storage[i]);
+                }
+            }
+            return items;
+        }
+
+        /// <summary>
+        /// Performs the specified action on each element of the CustomLibrary.Collections.CustomList`1.
+        /// </summary>
+        /// <param name="action"></param>
+        public void ForEach(Action<T> action)
+        {
+            if (action == null)
+            {
+                throw new ArgumentNullException();
+            }
+            for (int i = 0; i < Count; i++)
+            {
+                action(Storage[i]);
+            }
+        }
+
+        /// <summary>
         /// Determines whether an element is in the CustomLibrary.Collections.CustomList`1
         /// </summary>
         /// <param name="item"></param>
@@ -265,6 +319,19 @@ namespace CustomLibrary.Collections
         {
             if (index < 0 || index >= Count)
                 throw new IndexOutOfRangeException("Index out of range");
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                yield return Storage[i];
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }

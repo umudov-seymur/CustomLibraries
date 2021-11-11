@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using CustomLibrary.Collections;
+﻿using CustomLibrary.Collections;
+using System;
 
 namespace CustomLibraries
 {
@@ -15,6 +14,7 @@ namespace CustomLibraries
             popularCities.Add("Baku");
             popularCities.Add("Istanbul");
             popularCities.Insert(2, "Sydney");
+            popularCities.Add("Baku");
 
             Console.WriteLine(popularCities.Remove("Baku"));
             popularCities.RemoveAt(1);
@@ -24,9 +24,11 @@ namespace CustomLibraries
 
             Console.WriteLine($"Baku in cities ? {popularCities.Contains("Baku")}");
 
-            for (int i = 0; i < popularCities.Count; i++)
+            var findedItems = popularCities.FindAll(city => city.Contains("Baku"));
+
+            foreach (var item in findedItems)
             {
-                Console.WriteLine(popularCities[i]);
+                Console.WriteLine(item);
             }
 
             popularCities.Clear();
